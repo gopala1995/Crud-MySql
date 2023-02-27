@@ -9,7 +9,7 @@ import {
 } from "@mui/material";
 import React, { useState } from "react";
 
-import { useHistory, useNavigate } from 'react-router-dom'
+import { useHistory, useNavigate } from "react-router-dom";
 
 const Form = styled(FormGroup)`
   width: 50%;
@@ -20,8 +20,7 @@ const Form = styled(FormGroup)`
 `;
 
 export const AddUsers = () => {
-
-  const navigate = useNavigate()
+  const navigate = useNavigate();
 
   const [inpval, setINP] = useState({
     Fname: "",
@@ -74,15 +73,12 @@ export const AddUsers = () => {
       console.log(data);
 
       if (data) {
-        navigate("/")
+        navigate("/");
       } else {
-    
         console.log("data added");
       }
     }
   };
-
-
 
   return (
     <div>

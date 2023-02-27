@@ -20,7 +20,7 @@ const Form = styled(FormGroup)`
 `;
 
 export const EditUser = () => {
-    const navigate = useNavigate()
+  const navigate = useNavigate();
   const [inpval, setINP] = useState({
     Fname: "",
     Lname: "",
@@ -88,8 +88,7 @@ export const EditUser = () => {
     if (res2.status === 422 || !data2) {
       alert("fill the data");
     } else {
-        navigate("/")
-        
+      navigate("/");
     }
   };
 
